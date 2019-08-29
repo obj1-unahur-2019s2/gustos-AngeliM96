@@ -6,6 +6,15 @@ object rojo
 		return true
 	}
 }
+
+object naranja
+{  
+	method esFuerte() 
+	{ 
+		return true
+	}
+} 
+
 object verde 
 {  
 	method esFuerte() 
@@ -165,5 +174,63 @@ object placa
 	method peso(pesoNuevo) 
 	{ 
 		peso = pesoNuevo
+	}
+}
+
+object arito
+{
+	method color()
+	{
+		return celeste
+	}
+	method peso()
+	{
+		return 180
+	}
+	method material()
+	{
+		return cobre
+	}
+}
+
+object banquito
+{
+	var color = naranja
+	method material()
+	{
+		return madera
+	}
+	method peso()
+	{
+		return 1700
+	}
+	method color()
+	{
+		return color
+	}
+	method color(colorNuevo)
+	{
+		color = colorNuevo
+	}
+}
+
+object cajita
+{
+	var interior 
+	method color()
+	{
+		return rojo
+	}
+	method interior()
+	{
+		return interior
+	}
+	method interior(objetoInterior)
+	{
+		interior = objetoInterior
+	}
+	method peso()
+	{
+		return interior.peso() + 400
 	}
 }
